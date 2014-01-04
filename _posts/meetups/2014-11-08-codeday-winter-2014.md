@@ -4,7 +4,7 @@ meetup: meetup
 layout: meetup
 title: CodeDay NY
 date: "2014-11-08 17:30:00"
-permalink: "/codeday/"
+permalink: "/codeday-winter-2014/"
 host: "StudentRND"
 address: "Wix Lab, 235 W 23rd St, NYC"
 link: "https://codeday.org/ny/"
