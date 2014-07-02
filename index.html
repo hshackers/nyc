@@ -1,0 +1,95 @@
+---
+layout: default
+background: "url(http://i.imgur.com/oPGTBiS.jpg) #03A9F4"
+---
+
+<header>
+  <div class="c">
+    <h1>This is High School Hackers.</h1>
+    <p class="lead">We create, build, and innovate.</p>
+  </div>
+</header>
+
+<!-- END COVER -->
+</div>
+
+
+<div class="meetups">
+  {% assign curDate = site.time | date: '%s' %}
+    {% for post in site.posts %}
+      {% assign postStartDate = post.date | date: '%s' %}
+      {% if postStartDate == curDate %}
+
+      <div id="now">
+        <div class="c">
+
+        <a class="post-link white-box" href="{{ post.url | prepend: site.baseurl }}">
+          <div class="preview" style="background:{{ post.background }}">
+            <div class="date">
+                <small>{{ post.date | date: "%B" }}</small>
+                {{ post.date | date: "%-d" }}
+            </div>
+          </div>
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.date | date: "%H:%M" }} at {{ post.address }}</p>
+        </a>
+        <br><br>
+
+
+        </div>
+      </div>
+
+      {% endif %}
+    {% endfor %}
+</div>
+
+
+<section class="home">
+  <div class="c">      
+
+      <h2>Upcoming Meetups</h2>
+      <div class="meetups">
+        {% assign curDate = site.time | date: '%s' %}
+          {% for post in site.posts %}
+            {% assign postStartDate = post.date | date: '%s' %}
+            {% if postStartDate > curDate %}
+              <a class="post-link white-box" href="{{ post.url | prepend: site.baseurl }}">
+                <div class="preview" style="background:{{ post.background }}">
+                  <div class="date">
+                      <small>{{ post.date | date: "%B" }}</small>
+                      {{ post.date | date: "%-d" }}
+                  </div>
+                </div>
+                <h3>{{ post.title }}</h3>
+                <p>{{ post.date | date: "%H:%M" }} at {{ post.address }}</p>
+              </a>
+              <br>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <br>
+
+        <h2>Recent Meetups</h2>
+        <div class="meetups">
+          {% assign curDate = site.time | date: '%s' %}
+            {% for post in site.posts %}
+              {% assign postStartDate = post.date | date: '%s' %}
+              {% if curDate > postStartDate %}
+              <a class="post-link white-box" href="{{ post.url | prepend: site.baseurl }}">
+                <div class="preview" style="background:{{ post.background }}">
+                  <div class="date">
+                      <small>{{ post.date | date: "%B" }}</small>
+                      {{ post.date | date: "%-d" }}
+                  </div>
+                </div>
+                <h3>{{ post.title }}</h3>
+                <p>{{ post.date | date: "%H:%M" }} at {{ post.address }}</p>
+              </a>
+              <br>
+              {% endif %}
+            {% endfor %}
+          </div>
+  
+  </div>
+</section>
+

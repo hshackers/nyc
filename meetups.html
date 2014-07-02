@@ -1,0 +1,53 @@
+---
+layout: page
+title: Meetups
+caption: Join us
+subtitle: Come join one of our upcoming meetups!
+icon: direction
+background: "#4054B2"
+permalink: /meetups/
+navigation: visible
+---
+
+      <h2>Upcoming Meetups</h2>
+      <div class="meetups">
+        {% assign curDate = site.time | date: '%s' %}
+          {% for post in site.posts %}
+            {% assign postStartDate = post.date | date: '%s' %}
+            {% if postStartDate >= curDate %}
+              <a class="post-link white-box" href="{{ post.url | prepend: site.baseurl }}">
+                <div class="preview" style="background:{{ post.background }}">
+                  <div class="date">
+                      <small>{{ post.date | date: "%B" }}</small>
+                      {{ post.date | date: "%-d" }}
+                  </div>
+                </div>
+                <h3>{{ post.title }}</h3>
+                <p>{{ post.date | date: "%H:%M" }} at {{ post.address }}</p>
+              </a>
+              <br>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <br>
+
+        <h2>Recent Meetups</h2>
+        <div class="meetups">
+          {% assign curDate = site.time | date: '%s' %}
+            {% for post in site.posts %}
+              {% assign postStartDate = post.date | date: '%s' %}
+              {% if curDate > postStartDate %}
+              <a class="post-link white-box" href="{{ post.url | prepend: site.baseurl }}">
+                <div class="preview" style="background:{{ post.background }}">
+                  <div class="date">
+                      <small>{{ post.date | date: "%B" }}</small>
+                      {{ post.date | date: "%-d" }}
+                  </div>
+                </div>
+                <h3>{{ post.title }}</h3>
+                <p>{{ post.date | date: "%H:%M" }} at {{ post.address }}</p>
+              </a>
+              <br>
+              {% endif %}
+            {% endfor %}
+          </div>
