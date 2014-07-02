@@ -1,0 +1,484 @@
+// Fancy custom CSS framework
+
+// Normalize
+@import "global/_normalize.scss";
+
+// Varaibles
+@import "global/_vars.scss";
+
+// Colors
+$navy: #03152a;
+$skyblue: #B9D8ED;
+$blue: #03A9F4;
+$green: #60D317;
+$orange: #F15823;
+$red: #e74c3c;
+$pink: #E91E63;
+$purple: #4054B2;
+$yellow: #FFF200;
+
+$brown: #714104;
+$ltgray: #F1F1F1;
+$gray: #464646;
+$dark: black;
+$light: white;
+
+$facebook: #3a5898;
+
+// Base
+@import "global/_base.scss";
+
+// Grid System
+@import "grid/_precompiled.scss";
+
+/* ================================================================== */
+/* This file has a mobile-to-tablet, and tablet-to-desktop breakpoint */
+/* ================================================================== */
+
+$media-mobile-max: 767px !default;
+$media-tablet-min: 768px !default;
+$media-tablet-max: 1024px !default;
+$media-desktop-min: 1025px !default;
+// 
+// @import "grid/unsemantic-ie-snap.sass";
+// 
+// @media screen {
+//   @import "grid/unsemantic-grid-base-tablet.sass";
+// }
+// @media screen and (max-width: 767px) {
+//   @import "grid/unsemantic-grid-mobile.sass";
+// }
+// @media screen and (min-width: 768px) and (max-width: 1024px) {
+//   @import "grid/unsemantic-grid-tablet.sass";
+// }
+// @media screen and (min-width: 1025px) {
+//   @import "grid/unsemantic-grid-desktop.sass";
+// }
+
+// Components
+@import "global/_scrollbars.scss";
+
+// Animations
+@import "global/_animations.scss";
+
+// Buttons
+@import "global/_buttons.scss";
+
+// Typography
+@import "global/_type.scss";
+
+// Franklin Ghotic
+@import url(../fonts/franklin-ghotic/stylesheet.css);
+
+// Prettyprint
+@import "global/_prettyprint-monokai.scss";
+
+// Icons
+@import url(../fonts/icons/style.css);
+
+// Modals
+// @import "global/_modal.scss";
+
+// Long Shadows
+// @import "global/_longshadows.scss";
+
+// Navigation
+// @import "_nav.scss";
+
+// Tooltips
+// @import "global/_tooltips.scss";
+
+// Custom Styles
+body {
+  font-size: $font-size;
+  font-weight: 300;
+  background: white;
+  color: black;
+}
+
+h1, h2, h3, .button-jumbo {
+  font-weight: bold;
+}
+
+
+input, div.gm-iw div, div.gm-style-mtc div, div.gm-style-cc div {
+  font-family: $fonts!important;
+}
+
+img {
+  max-width: 100%;
+  height: auto; 
+}
+
+hr {
+  border: 2px solid rgba(0,0,0,.5);
+}
+
+header, section, footer, {
+  position: relative; overflow: hidden;
+  background-size: cover; background-position: cover;
+  padding: 40px 0;
+}
+
+.c {
+  padding: 0 20px;
+}
+
+section .c {
+  padding: 20px 20px;
+}
+
+.sr-only, .back2top {
+  display: none;
+}
+
+.transition {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+}
+
+.padded {
+  padding: 50px 0;
+}
+
+.text-white {
+  color: white;
+}
+
+// Grid overrides
+.row {
+  [class^=col]:first-child {
+    padding-left: 0;
+  }
+  [class^=col]:last-child {
+    padding-right: 0;
+  }
+}
+
+// Buttons
+.button {
+  // @extend .button-large;
+  border-radius: 6px;
+  margin-right: 0.2em;
+}
+
+.button {
+  @include button-border($orange);
+  outline: none;
+  font-weight: normal;
+  &.btn-large {
+    @extend .button-jumbo;
+  }
+}
+
+.button-orange {
+  @include button-border($orange);
+}
+
+.button-blue {
+  @include button-border($blue);
+}
+
+.button-green {
+  @include button-border($green);
+}
+
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.dark-text-shadow {
+  text-shadow: rgba(41, 52, 63, 0.4) 0 -1px 0;
+}
+
+i {
+  font-size: 80%;
+  vertical-align: baseline;
+}
+
+ul.details {
+    border-top: 1px dotted;
+    margin: 1em 2em;
+    li {
+      padding: .5em;
+      border-bottom: 1px dotted;
+    }
+}
+
+a {
+  display: inline-block;
+  -webkit-tap-highlight-color: rgba(30, 152, 211, 0.5);
+  @extend .transition;
+  /* &:active {
+    -webkit-transform: scale(0.9);
+  } */
+}
+
+img {
+  max-width: 100%;
+}
+
+.row:before, .row:after {
+  clear: both;
+  content: ' ';
+}
+
+.linearound {
+  display: block;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  &::after {
+    content: ' ';
+    border-bottom: 1px solid #7d7d7d;
+    width: auto;
+    display: block;
+    margin-top: -2.4em;
+  }
+  h1, h2 {
+    display: inline-block;
+    text-align: center;
+    font-size: 60px;
+    color: #7d7d7d;
+    background: white;
+    padding: 0 20px;
+  }
+}
+
+.love {
+  color: $red;
+  display: inline-block;
+  animation: 1s heartbeat infinite;
+  -moz-animation: 1s heartbeat infinite;
+  -webkit-animation: 1s heartbeat infinite;
+  -ms-animation: 1s heartbeat infinite;
+}
+
+.highlight {
+  background: $yellow;
+}
+
+.dotted-link {
+  border-radius: 0;
+  border-bottom: 1px dotted;
+  &:hover {
+    border-bottom: 1px solid;
+  }
+}
+
+p a, article a  {
+  @extend .dotted-link;
+}
+
+// Blockquotes style 1
+blockquote {
+  margin: 1.5em 0;
+  padding: 10px 20px 10px 20px;
+  border-left: 8px solid black;
+  // background: rgb(220,220,220);
+  background: $ltgray;
+  color: black;
+  @extend .transition;
+  &:hover {
+    border-left-color: red;
+  }
+}
+
+// White Box
+.white {
+  background: white;
+  color: black;
+}
+
+.white-box {
+  border-radius: $border-radius;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0, 0, 0, 0.15);
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  color: rgb(117, 117, 117);
+  margin: 0;
+  padding: 15px;
+  background: white;
+  @extend .transition;
+  h1, h2, h3 {
+    color: black;
+    line-height: 1em;
+    margin: 0;
+    border-bottom: 1px solid;
+    i {
+      float: right;
+    }
+  }
+}
+
+a.white-box:hover {
+  box-shadow: 0 1px 16px rgba(0, 0, 0, 0.5), 0 1px 8px rgba(0, 0, 0, 0.4);
+}
+
+// Default Cover
+.cover {
+  background: $navy;
+  color: white;
+  background-size: cover!important;
+  background-position: center!important;
+}
+
+// Navigation
+nav {
+  padding: 25px 0;
+  a {
+    display: inline-block;
+    vertical-align: top;
+    color: #FFF;
+    padding: 8px 14px 10px;
+    margin-right: 10px;
+    line-height: 1.2em;
+    font-size: 22px;
+    font-weight: bold;
+    @extend .transition;
+    i {
+      float: left;
+      display: inline-block;
+      font-size: 40px;
+      line-height: 30px;
+      margin-right: 10px;
+      font-weight: normal;
+    }
+    div {
+      display: block;
+      float: right;
+    }
+    small {
+      font-size: 75%;
+      line-height: 1em;
+      font-weight: normal;
+      display: block;
+      white-space: nowrap;
+    }
+    &.logo {
+      background: $red;
+    }
+    &.facebook {
+      background: $facebook;
+      float: right;
+    }
+    &:hover {
+      background: rgba(30,30,30,.8);
+    }
+  }
+}
+
+// Meetup Homepage
+.meetups {
+  a.white-box {
+    display: block;
+    h1, h2, h3 {
+      border-bottom: none;
+    }
+  }
+  .preview {
+    display: block;
+    width: 25%;
+    min-width: 300px;
+    float: left;
+    text-align: center;
+    margin: -20px;
+    color: white;
+    margin-right: 20px;
+    .date {
+      float: none;
+      margin: 20px auto 20px auto;
+    }    
+  }
+}
+
+// Now
+#now {
+  background: $red;
+}
+
+// Details pane
+#details {
+  background: $gray;
+  background: rgba(0,0,0,.8);
+  color: white;
+}
+
+// Footer
+footer {
+  background: $ltgray;
+  min-height: 300px;
+}
+
+// Navigation
+#notifications {
+  background: $blue;
+  color: white;
+  a {
+    color: white;
+  }
+}
+
+// Date
+.date {
+  width: 125px;
+  height: 125px;
+  border: 4px solid white;
+  border-radius: $border-radius;
+  float: left;
+  margin: 20px 50px 0 0;
+  font-size: 60px;
+  line-height: 60px;
+  text-align: center;
+  small {
+    font-size: 30px;
+    line-height: 45px;
+    display: block;
+  }
+}
+
+// Footnote
+.footnote {
+  background: rgb(71, 71, 71);
+  color: white;
+  .to-the-moon {
+    @include button-border(white);
+    padding: 5px 10px;
+    vertical-align: middle;
+    margin-top: 12px;
+    &:hover {
+      color: black!important;
+    }
+  }
+  p a {
+    color: white;
+  }
+}
+
+.visible-mobile {
+  visibility: hidden;
+}
+
+@media screen and (max-width: $mobile) {
+  .hidden-mobile {
+    display: none!important;
+  }
+  .visible-mobile {
+    visibility: visible;
+  }
+  .mobile-transition {
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+  }
+  .row {
+    [class^=col]:first-child {
+      padding-left: 10px;
+    }
+    [class^=col]:last-child {
+      padding-right: 10px;
+    }
+  }
+}
