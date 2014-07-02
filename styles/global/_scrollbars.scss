@@ -1,0 +1,11 @@
+// Google-Inspired Scrollbar
+::-webkit-scrollbar {
+    background: whiteSmoke;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: solid whiteSmoke 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: lighten($dark, 20%);
+}

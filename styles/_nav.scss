@@ -1,0 +1,238 @@
+// Universal
+nav {
+    ul {
+        display: none;
+    }
+    .logo b {
+        font-weight: 900;
+    }
+}
+
+// Desktop
+@media screen and (min-width: 771px) {
+
+    .bar.mobile-header, .bar.mobile-footer {
+        display: none;
+    }
+
+    div.has-nav {
+        position: fixed;
+        z-index: 9001;
+        width: 100%;
+        display: block;
+        top: 0px;
+        left: 0px;
+        background: rgba(255,255,255,.9);
+    }
+
+    nav {
+        text-align: right;
+        line-height: 80px;
+        color: black;
+
+        & > a {
+            color: inherit;
+            // color: white;
+            padding: 0px 12px;
+            display: inline-block;
+            // text-shadow: 0 0 8px black;
+            &.last {
+                padding-right: 24px;
+            }
+            &:last-child {
+                margin-right: 0px;
+            }
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .logo {
+            float: left;
+            font-size: 150%;
+        }
+        .register {
+            @include button-border(white);
+            margin-top: -6px;
+            line-height: 2em;
+            &:hover {
+                background: $green;
+                border-color: $green;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 771px) and (max-width: 850px) {
+
+    nav {
+        & > a {
+            padding: 0px 6px;
+        }
+    }
+
+}
+
+// Mobile
+// -@ Codrops ;)
+@media screen and (max-width: 770px) {
+
+    .bar.mobile-header, .bar.mobile-footer {
+        display: block;
+    }
+
+    .nav {
+        background: #47a3da;
+        position: fixed;
+        width: 240px;
+        height: 100%;
+        top: 56px;
+        z-index: 400;
+    }
+
+    .nav .logo {
+        display: none;
+        // color: #afdefa;
+        // font-size: 1.9em;
+        // padding: 20px;
+        // margin: 0;
+        // font-weight: 300;
+        // background: $dark;
+        // padding: 0 1em;
+        // line-height: 44px;
+    }
+
+    .nav a {
+        display: block;
+        color: #fff;
+        font-size: 1.1em;
+        font-weight: 300;
+        border-bottom: 1px solid #258ecd;
+        padding: 0.7em 1em;
+
+        &:hover {
+            background: #258ecd;
+        }
+
+        &:active {
+            background: #afdefa;
+            color: #47a3da;
+        }
+
+    }
+
+    .nav-left {
+        left: -240px;
+    }
+
+    .nav-left.nav-open {
+        left: 0px;
+    }
+
+    body {
+        overflow-x: hidden;
+        position: relative;
+        left: 0;
+        padding-top: 44px;
+        padding-bottom: 44px;
+    }
+
+    .nav-push {
+        left: 240px;
+    }
+    
+    body,
+    .nav,
+    .nav-push {
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    } 
+
+}
+
+// Bars
+.bar {
+    user-select: none;
+    -webkit-user-select: none;
+    text-align: center;
+    background: #3E5771;
+    color: white;
+    height: 44px;
+    line-height: 44px;
+    font-size: 1.1em;
+    // For iOS7 Webapps
+    // margin-top: 30px;
+    a {
+        color: white;
+    }
+    .logo {
+        font-size: 30px;
+    }
+    #toggle-nav {
+        float: left;
+        padding: 0 8px;
+        i {
+            display: inline-block;
+            font-size: 110%;
+            vertical-align: text-bottom;
+        }
+        span {
+            font-size: 0.6em;
+            line-height: 1em;
+            display: inline-block;
+            margin-top: -3px;
+        }
+    }
+    .right, .left {
+        padding: 0 8px;
+    }
+    &.mobile-header {
+        position: fixed;
+        top: 12px;
+        left: 0px;
+        width: 100%;
+        height: 44px;
+        z-index: 500;
+        &:before {
+            top: 0px;
+            left: 0px;
+            height: 12px;
+            width: 100%;
+            background: #3E5771;
+            content: ' ';
+            display: block;
+            position: fixed;
+        }
+    }
+    &.mobile-footer {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 62px;
+        z-index: 500;
+        line-height: 1em;
+        text-align: center;
+        background: rgba(62, 87, 113, 0.9);
+        color: black;
+        menu {
+            padding-left: 0px;
+            padding-top: 0px;
+            margin-top: 8px;
+            font-family: Arial;
+            font-weight: bold;
+            a {
+                display: inline-block;
+                margin: 0px;
+                width: 22%;
+                i {
+                    font-size: 30px;
+                }
+                span {
+                    display: block;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

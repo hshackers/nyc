@@ -1,0 +1,100 @@
+// Box Sizing
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// Clearfix
+.reset:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+// Selection
+::-moz-selection {
+    // background: #553387;
+    background: rgba(0,0,0,.8);
+    color: #fff;
+    text-shadow: 0 0 3px rgba(0,0,0,.7);
+}
+
+::selection {
+    // background: #553387;
+    background: rgba(0,0,0,.8);
+    color: #fff;
+    text-shadow: 0 0 3px rgba(0,0,0,.7);
+}
+
+// Body
+body{
+  background: white;
+  color: black;
+  line-height: 1.5em;
+  -webkit-font-smoothing: antialiased;
+  font-family: $fonts;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+  border-radius: $border-radius;
+}
+
+// Sections
+section, header, footer {
+	min-height: 100%;
+	position: relative;
+}
+
+// Accessibility
+.screen-reader {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+// Noscript
+noscript, noscript img {
+  margin: 0;
+  display: block;
+  width: 100%;
+}
+
+noscript div, .oldie {
+  // content: 'Please enable javascript to access this site.';
+  font-size: 30px;
+  padding: 18px;
+  display: block;
+  text-align: center;
+}
+
+// Bolds
+b, strong {
+  font-weight: bold;
+}
+
+// Disable Pointer Events on Scroll
+.disable-hover {
+// .disable-hover * {
+  pointer-events: none !important;
+}
+
+// Floats
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}

@@ -1,0 +1,76 @@
+// Base
+body {
+     font-family: $fonts;
+     font-size: $font-size;
+     line-height: 1.5em;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: bold;
+    color: inherit;
+    line-height: 1.2em;
+    margin: 0.2em auto;
+    text-rendering: optimizelegibility;
+    -webkit-text-rendering: optimizelegibility;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 28px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+// Paragraphs
+.lead {
+    font-size: 28px;
+    line-height: 1.3em;
+    margin-bottom: 1em;
+}
+
+.hero {
+    font-size: 30px;
+    line-height: 1.4em;
+}
+
+// Text alignment
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+@media only screen and (max-width: $mobile) {
+    body {
+        font-size: ($font-size - 1);
+    }
+    h1 {
+        font-size: 50px;
+    }
+    p.lead {
+        font-size: 22.5px;
+    }
+}
