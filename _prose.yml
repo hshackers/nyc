@@ -1,0 +1,50 @@
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://nyc.hshackers.org/'
+  media: 'media'
+  ignore:
+    - index.html
+    - meetups.html
+    - _config.yml
+    - /_layouts
+    - /_includes
+  metadata:
+    _posts:
+      - name: "meetup"
+        field:
+          element: "hidden"
+          value: "meetup"
+      - name: "categories"
+        field: 
+          element: "hidden"
+          value: "meetup"
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          value: ""
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date (YYYY-MM-DD HH:MM:SS)"
+          value: "2014-06-08 10:30:00"
+      - name: "host"
+        field:
+          element: "text"
+          label: "Host"
+          value: ""
+      - name: "address"
+        field:
+          element: "text"
+          label: "Address"
+          value: ""
+      - name: "link"
+        field:
+          element: "text"
+          label: "Link"
+          value: ""
+      - name: "background"
+        field:
+          element: "text"
+          label: "Background (CSS)"
+          value: "url() #03152A"
