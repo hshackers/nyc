@@ -2235,7 +2235,7 @@ nav {
     vertical-align: top;
     color: #FFF;
     padding: 8px 14px 10px;
-    margin-right: 10px;
+    margin-right: 7px;
     line-height: 1.2em;
     font-size: 22px;
     font-weight: bold; }
@@ -2334,6 +2334,9 @@ footer {
 .visible-mobile {
   visibility: hidden; }
 
+@media screen and (min-width: 768px) {
+  .visible-mobile {
+    display: none; } }
 @media screen and (max-width: 767px) {
   .hidden-mobile {
     display: none !important; }
