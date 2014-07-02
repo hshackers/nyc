@@ -1,4 +1,4 @@
-# (HS Hackers NYC)[http://nyc.hshackers.org/]
+# [HS Hackers NYC](http://nyc.hshackers.org/)
 
 A Jekyll-flavored version of the meetup site, hosted by GitHub pages.
 
@@ -6,7 +6,7 @@ Since this site doesn't have a database, RSVPs are simply links to external site
 
 ## Creating/Editing a Meetup
 
-Just head over to (prose.io)[http://prose.io/#hshackers/nyc/] and start a new post. Naming conventions will automatically be handled for you, but it is important that you fill out the metadata by clicking the content icon on the right. It should generate somethign like this:
+Just head over to [prose.io](http://prose.io/#hshackers/nyc/) and start a new post. Naming conventions will automatically be handled for you, but it is important that you fill out the metadata by clicking the content icon on the right. It should generate somethign like this:
 
 ````
 ---
