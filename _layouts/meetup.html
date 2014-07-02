@@ -1,0 +1,35 @@
+---
+layout: default
+---
+  <header class="post-header">
+    <div class="c">
+      <div class="date">
+          <small>{{ page.date | date: "%B" }}</small>
+          {{ page.date | date: "%-d" }}
+      </div>
+      <h1>{{ page.title }}</h1>
+      <p class="lead">{{ page.date | date: "%H:%M" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.address %} • {{ page.address }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} </p>
+    </div>
+  </header>
+
+  {% assign curDate = site.time | date: '%s' %}
+  {% assign postStartDate = post.date | date: '%s' %}
+
+  <div id="details">  
+    <div class="c">
+      <p class="lead">{% if page.host %} Hosted by {{ page.host }}{% endif %} {% if page.link %} • <a href="{{ page.link }}" target="_blank"><i class="icon-board"></i> RSVP</a>{% endif %} {% if page.address %} • <a href="https://maps.google.com/?daddr={{ page.address }}" target="_blank"><i class="icon-binocular"></i> Get Directions</a>{% endif %}</p>
+    </div>
+  </div>
+
+<!-- END COVER -->
+</div>
+
+<section class="post">
+  <div class="c">
+  <article class="post-content">
+  <p></p>
+  {{ content }}
+  </article>
+
+  </div>
+</section>
