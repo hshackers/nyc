@@ -11,13 +11,17 @@ navigation: "visible"
 
 ## Organizers
 
-High School Hackers NYC is one of many [regional branches]() of the HS Hackers meetup group across the country.
+High School Hackers NYC is one of many [regional branches](http://hshackers.org/) of the HS Hackers meetup group across the country.
 
 The New York City meetup group is run by John Mormon and Jon Moss.
 
 ## Press Contact
 
-hello at victorlourng dot com (change this!)
+hello at victorlourng dot com
+
+## Contribute
+
+Take a look at the [readme.md](https://github.com/hshackers/nyc/blob/gh-pages/readme.md) file on GitHub.
 
 ## Code of Conduct
 
