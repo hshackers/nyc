@@ -481,4 +481,49 @@ footer {
       padding-right: 10px;
     }
   }
+  h1, h2, h3, h4, h5 {
+    text-align: center;
+  }
+  nav {
+    height: 85px;
+    width: auto;
+    overflow: hidden;
+    @extend .mobile-transition;
+    .menu-button {
+      cursor: pointer;
+      i {
+        margin-right: 0px;
+      }
+    }
+    &.expanded {
+      height: auto;
+      overflow: visible;
+    }
+  }
+  nav a {
+    margin-right: 0px; 
+    div {
+      // display: none;
+    }
+    i {
+      // margin-right: 0px;
+    }
+  }
+  .meetups .preview {
+    margin-bottom: 20px;
+    width: 120%;
+  }
+  .date {
+    display: block;
+    margin: auto;
+    float: none;
+  }
+  .cover p.lead, #details {
+    text-align: center;
+  }
+  .footnote .to-the-moon {
+    float: none;
+    display: block;
+    text-align: center;
+  }
 }

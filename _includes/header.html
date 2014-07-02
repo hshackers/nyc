@@ -38,8 +38,11 @@
           <small>New York City</small>
         </div>
       </a>
+      <a href="#" onclick="$('nav').toggleClass('expanded')" class="menu-button visible-mobile right">
+        <i class="icon-more"></i>
+      </a>
       {% for page in site.pages %} {% if page.navigation contains 'visible' %}
-        <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
+        <a class="page-link" onclick="$('nav').toggleClass('expanded')" href="{{ page.url | prepend: site.baseurl }}">
           <i class="icon-{{ page.icon }}"></i>
           <div>
             {{ page.title }}
