@@ -32,11 +32,9 @@ It's located off of red lines 2 and 3 at the Fulton Ave local stop. Stack Overfl
 
 ## Demos
 
-Please sign up for demos here AS SOON AS POSSIBLE: 
+The schedule for the demos can be found here:
 
-[https://docs.google.com/spreadsheet/viewform?formkey=dGZ5d1NSSkloLVlCdlFuYmswSlNYaGc6MA](https://docs.google.com/spreadsheet/viewform?formkey=dGZ5d1NSSkloLVlCdlFuYmswSlNYaGc6MA)
-
-<iframe src="https://docs.google.com/spreadsheet/viewform?formkey=dGZ5d1NSSkloLVlCdlFuYmswSlNYaGc6MA" style="height:800px;width:100%;border:none;" class="hidden-mobile"></iframe>
+[https://docs.google.com/document/d/1uzqHBNjwljeMd_t2lZvSOhI-6tl8DDNtdwvlQkRenPk/edit](https://docs.google.com/document/d/1uzqHBNjwljeMd_t2lZvSOhI-6tl8DDNtdwvlQkRenPk/edit)
 
 ## Sponsors
 
