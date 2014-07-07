@@ -73,4 +73,4 @@ Major kudos to these people/companies for making this meetup possible:
 
 - [Major League Hacking](http://mlh.io/) for dinner
 - [Stack Exchange](https://stackexchange.com/) for providing a venue
-- [Zivtech](http://zivtech.com/) for the shirt giveaway
+- [Zivtech](http://zivtech.com/) and [Chartbeat](http://charbeat.com/) for the swag
