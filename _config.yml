@@ -1,9 +1,10 @@
 # Site settings
 title: HS Hackers NYC
-email: "hello at victorlourng dot com (CHANGE ME!)"
+location: New York City
 description: "Welcome to the High School Hackers NYC meetup group!"
 baseurl: ""
 url: "http://nyc.hshackers.org"
+accent: "#E74C3C"
 
 # Build settings
 markdown: kramdown
