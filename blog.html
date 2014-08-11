@@ -1,20 +1,20 @@
 ---
 layout: page
-title: Meetups
-caption: Join us
-subtitle: Come join one of our upcoming meetups!
-icon: direction
-background: "#4054B2"
-permalink: /meetups/
-navigation: visible
+title: Blog (Coming Soon)
+caption: Fresh &amp; hot
+subtitle: Curated articles fresh off the press!
+icon: newspaper
+background: "#F15823"
+permalink: /blog/
+navigation: hidden
 ---
 
       <h2>Upcoming Meetups</h2>
       <div class="meetups">
         {% assign curDate = site.time | date: '%s' %}
-          {% for post in site.categories.meetup %}
+          {% for post in site.posts %}
             {% assign postStartDate = post.date | date: '%s' %}
-            {% if postStartDate > curDate %}
+            {% if postStartDate >= curDate %}
               <a class="post-link white-box" href="{{ post.url | prepend: site.baseurl }}">
                 <div class="preview" style="background:{{ post.background }}">
                   <div class="date">
@@ -34,7 +34,7 @@ navigation: visible
         <h2>Recent Meetups</h2>
         <div class="meetups">
           {% assign curDate = site.time | date: '%s' %}
-            {% for post in site.categories.meetup %}
+            {% for post in site.posts %}
               {% assign postStartDate = post.date | date: '%s' %}
               {% if curDate > postStartDate %}
               <a class="post-link white-box" href="{{ post.url | prepend: site.baseurl }}">
@@ -51,5 +51,5 @@ navigation: visible
               {% endif %}
             {% endfor %}
           </div>
-                    
+          
           <p>For the debugging purposes, this site was last built at {{ site.time | date: '%s' }} UNIX time.</p>

@@ -2071,6 +2071,13 @@ section .c {
 .padded {
   padding: 50px 0; }
 
+.page-height {
+  height: 100vh;
+  vertical-align: middle; }
+
+.overflow-hidden {
+  overflow: hidden; }
+
 .text-white {
   color: white; }
 
@@ -2208,7 +2215,8 @@ blockquote {
   color: #757575;
   margin: 0;
   padding: 15px;
-  background: white; }
+  background: white;
+  border-bottom: none !important; }
   .white-box h1, .white-box h2, .white-box h3 {
     color: black;
     line-height: 1em;
@@ -2292,11 +2300,8 @@ footer {
   background: #f1f1f1;
   min-height: 300px; }
 
-#notifications {
-  background: #03a9f4;
-  color: white; }
-  #notifications a {
-    color: white; }
+#notifications a {
+  color: inherit; }
 
 .date {
   width: 125px;
@@ -2337,24 +2342,10 @@ footer {
 @media screen and (min-width: 768px) {
   .visible-mobile {
     display: none; } }
-@media screen and (max-width: 767px) {
-  .hidden-mobile {
-    display: none !important; }
-
-  .visible-mobile {
-    visibility: visible; }
-
-  .mobile-transition, nav {
+@media screen and (max-width: 1067px) {
+  .nav-transition, nav {
     transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out; }
-
-  .row [class^=col]:first-child {
-    padding-left: 10px; }
-  .row [class^=col]:last-child {
-    padding-right: 10px; }
-
-  h1, h2, h3, h4, h5 {
-    text-align: center; }
 
   nav {
     height: 85px;
@@ -2369,7 +2360,25 @@ footer {
       overflow: visible; }
 
   nav a {
-    margin-right: 0px; }
+    margin-right: 0px; } }
+@media screen and (max-width: 767px) {
+  .hidden-mobile {
+    display: none !important; }
+
+  .visible-mobile {
+    visibility: visible; }
+
+  .mobile-transition {
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out; }
+
+  .row [class^=col]:first-child {
+    padding-left: 10px; }
+  .row [class^=col]:last-child {
+    padding-right: 10px; }
+
+  h1, h2, h3, h4, h5 {
+    text-align: center; }
 
   .meetups .preview {
     margin-bottom: 20px;
