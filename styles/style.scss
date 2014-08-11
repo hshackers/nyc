@@ -141,6 +141,15 @@ section .c {
   padding: 50px 0;
 }
 
+.page-height {
+  height: 100vh;
+  vertical-align: middle;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .text-white {
   color: white;
 }
@@ -302,6 +311,7 @@ blockquote {
   margin: 0;
   padding: 15px;
   background: white;
+  border-bottom: none!important;
   @extend .transition;
   h1, h2, h3 {
     color: black;
@@ -415,10 +425,8 @@ footer {
 
 // Navigation
 #notifications {
-  background: $blue;
-  color: white;
   a {
-    color: white;
+    color: inherit;
   }
 }
 
@@ -468,33 +476,16 @@ footer {
   }
 }
 
-@media screen and (max-width: $mobile) {
-  .hidden-mobile {
-    display: none!important;
-  }
-  .visible-mobile {
-    visibility: visible;
-  }
-  .mobile-transition {
+@media screen and (max-width: $mobile + 300) {
+  .nav-transition {
     transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
-  }
-  .row {
-    [class^=col]:first-child {
-      padding-left: 10px;
-    }
-    [class^=col]:last-child {
-      padding-right: 10px;
-    }
-  }
-  h1, h2, h3, h4, h5 {
-    text-align: center;
   }
   nav {
     height: 85px;
     width: auto;
     overflow: hidden;
-    @extend .mobile-transition;
+    @extend .nav-transition;
     .menu-button {
       cursor: pointer;
       i {
@@ -514,6 +505,32 @@ footer {
     i {
       // margin-right: 0px;
     }
+  }
+
+}
+
+@media screen and (max-width: $mobile) {
+  .hidden-mobile {
+    display: none!important;
+  }
+  .visible-mobile {
+    visibility: visible;
+  }
+  // Renamed + included twice to prevent scope errors
+  .mobile-transition {
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+  }
+  .row {
+    [class^=col]:first-child {
+      padding-left: 10px;
+    }
+    [class^=col]:last-child {
+      padding-right: 10px;
+    }
+  }
+  h1, h2, h3, h4, h5 {
+    text-align: center;
   }
   .meetups .preview {
     margin-bottom: 20px;

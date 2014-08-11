@@ -29,3 +29,7 @@ background: "url(http://i.imgur.com/U9bGouP.jpg)"
 - [ ] Set up Jenkins CI
 - [ ] Enable GitHub pages plugins
 - [ ] Test run #43 @world-domination/time-travel
+
+## Upgrading
+
+Copy over everything except /_posts, and _config.yml.

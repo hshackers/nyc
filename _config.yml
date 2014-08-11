@@ -4,7 +4,31 @@ location: New York City
 description: "Welcome to the High School Hackers NYC meetup group!"
 baseurl: ""
 url: "http://nyc.hshackers.org"
+
+# More settings
 accent: "#E74C3C"
+twitter: "hshackersnyc"
+github: "hshackers/nyc"
+contact: "hello at victorlourng dot com"
+organizers: "John Mormon and Jon Moss"
+
+# Get Meetup Notifications, visible or hidden
+notifications: "visible"
+
+# Get Meetup Notifications, IFTTT recipie URLs
+email: "https://ifttt.com/recipes/186850-hs-hackers-nyc-e-mail-notifications"
+gcal: "https://ifttt.com/recipes/186851-google-calendar-for-hs-hackers-nyc"
+sms: ""
+android: ""
+ifttt: "http://ifttt.com/"
+
+# Local Meetup Links
+meetup1: "NYC TechBreakfast"
+meetup1-url: "http://www.meetup.com/NYC-TechBreakfast/"
+meetup2: "NY Tech Meetup"
+meetup2-url: "http://www.meetup.com/ny-tech/"
+meetup3: "Technical.ly Brooklyn Meetup"
+meetup3-url: "http://www.meetup.com/technically-brooklyn/"
 
 # Build settings
 markdown: kramdown

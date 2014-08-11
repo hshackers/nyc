@@ -1,12 +1,26 @@
-<section id="notifications">
+{% if site.notifications contains 'visible' %}
+<section id="notifications" class="bg-accent">
   <div class="c">
 
       <h3>Get Meetup Notifications</h3>
-      <p class="rss-subscribe">Subscribe via <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="icon-broadcast"></i> RSS</a> | <a href="https://ifttt.com/recipes/186850-hs-hackers-nyc-e-mail-notifications" target="_blank"><i class="icon-envelope"></i> E-mail</a> | <a href="https://ifttt.com/recipes/186851-google-calendar-for-hs-hackers-nyc" target="_blank"><i class="icon-notebook"></i> Google Calendar</a> | <a href="http://ifttt.com" target="_blank"><i class="icon-chat"></i> SMS</a> | <a href="http://ifttt.com" target="_blank"><i class="icon-iphone"></i> Android</a> | <a href="http://ifttt.com" target="_blank"><i class="icon-bulb"></i> More on IFTTT</a></p>
+      <p class="rss-subscribe">
+        Subscribe via
+        <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="icon-broadcast"></i> RSS</a>
+        | {% if site.email %}
+        <a href="{{ site.email }}" target="_blank"><i class="icon-envelope"></i> E-mail</a>
+        | {% endif %}{% if site.gcal %}
+        <a href="{{ site.gcal }}" target="_blank"><i class="icon-notebook"></i> Google Calendar</a>
+        | {% endif %}{% if site.sms %}
+        <a href="{{ site.sms }}" target="_blank"><i class="icon-chat"></i> SMS</a>
+        | {% endif %}{% if site.andrid %}
+        <a href="{{ site.android }}" target="_blank"><i class="icon-iphone"></i> Android</a>
+        | {% endif %}
+        <a href="{{ site.ifttt }}" target="_blank"><i class="icon-bulb"></i> More on IFTTT</a>
+      </p>
 
   </div>
 </section>
-
+{% endif %}
 
 <footer>
 
@@ -22,28 +36,35 @@
           <a href="/about"><i class="icon-plus"></i> Learn More</a>
           <br>
           <a href="/about#code-of-conduct"><i class="icon-grid"></i> Code of Conduct</a>
-        </p>
+         </p>
       </div>
       <div class="col-33">
         <h3>Other Meetups</h3>
+        <!-- List of meetups go here! -->
         <p>
-          <a href="http://www.meetup.com/NYC-TechBreakfast/" target="_blank"><i class="icon-planet"></i> NYC TechBreakfast</a>
+          {% if site.meetup1 %}
+          <a href="{{ site.meetup1-url }}" target="_blank"><i class="icon-planet"></i> {{ site.meetup1 }}</a>
           <br>
-          <a href="http://www.meetup.com/ny-tech/" target="_blank"><i class="icon-planet"></i> NY Tech Meetup</a>
+          {% endif %}
+          {% if site.meetup2 %}
+          <a href="{{ site.meetup2-url }}" target="_blank"><i class="icon-planet"></i> {{ site.meetup2 }}</a>
           <br>
-          <a href="http://www.meetup.com/technically-brooklyn/" target="_blank"><i class="icon-planet"></i> Technical.ly Brooklyn Meetup</a>
+          {% endif %}
+          {% if site.meetup3 %}
+          <a href="{{ site.meetup3-url }}" target="_blank"><i class="icon-planet"></i> {{ site.meetup3 }}</a>
           <br>
+          {% endif %}
           <br>
-          <a href="http://philly.hshackers.org/" target="_blank"><i class="icon-planet"></i> HS Hackers Philadelphia</a>
+          <a href="http://locations.hshackers.org/" target="_blank"><i class="icon-planet"></i> HS Hackers Worldwide</a>
           <br>
           <a href="https://www.facebook.com/groups/PennAppsHS/events/" target="_blank"><i class="icon-facebook"></i> Facebook Group Events</a>
         </p>
         <h3>Stay in Touch</h3>
-        hello at victorlourng dot com
+        {{ site.contact }}
       </div>
       <div class="col-33 hidden-mobile">
-        <h3>@HSHackersNYC</h3>
-        <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/HSHackersNYC"  data-widget-id="484199749394784256"><i class="icon-twitter"></i> Tweets by @HSHackersNYC</a>
+        <h3>@{{ site.twitter }}</h3>
+        <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/{{ site.twitter }}"  data-widget-id="484199749394784256" data-screen-name="{{ site.twitter }}" data-link-color="{{ site.accent }}"><i class="icon-twitter"></i> Tweets by @{{ site.twitter }}</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
       </div>
     </div>
@@ -54,7 +75,7 @@
 <div class="footnote">
   <div class="c">
     <a class="to-the-moon right" href="#top"><i class="icon-pointer-up"></i> Back to Top</a>
-    <p>Created &amp; crafted with &nbsp; <i class="icon-heart love" title="love"></i> &nbsp; by <a href="http://victorlourng.com" target="_blank"><i class="icon-smile"></i> Victor Lourng</a>. Proudly hosted on <a href="http://github.com/hshackers/nyc/" target="_blank"><i class="icon-github"></i> GitHub Pages</a>.</p>
+    <p>Created &amp; crafted with &nbsp; <i class="icon-heart love" title="love"></i> &nbsp; by <a href="http://victorlourng.com" target="_blank"><i class="icon-smile"></i> Victor Lourng</a>. Proudly hosted on <a href="http://github.com/{{ site.github }}/" target="_blank"><i class="icon-github"></i> GitHub Pages</a>. <a href="http://prose.io/#hshackers/nyc/" target="_blank"><i class="icon-pencil"></i> Edit in Prose</a>.</p>
   </div>
 </div>
 

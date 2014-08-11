@@ -8,17 +8,24 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ "/styles/style.css" | prepend: site.baseurl }}">
+    
+    <style>
+    a, .text-accent, .dotted-link, p a, article a { color: {{ site.accent }}; }
+    .bg-accent, .logo, nav a.logo, .cover { background-color: {{ site.accent }}; color: white; }
+    blockquote:hover { border-left-color: {{ site.accent }}; }
+    </style>
+
+    <link rel="stylesheet" href="{{ "/styles/editme.css" | prepend: site.baseurl }}">
 
     <link rel="shortcut icon" href="/favicon.png">
-
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale = 1.0,maximum-scale=2.0,user-scalable=no">
 
-  <!-- Webapp -->
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Webapp -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-  <!-- Apple Touch Icon -->
-  <link rel="apple-touch-icon" content="/favicon.png">
-  <link rel="apple-touch-icon-precomposed" href="favicon.png">
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" content="/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="favicon.png">
 
 </head>
