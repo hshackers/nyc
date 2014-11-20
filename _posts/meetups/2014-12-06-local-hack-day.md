@@ -2,7 +2,7 @@
 categories: meetup
 meetup: meetup
 layout: meetup
-title: CodeDay NY
+title: Local Hack Day
 date: "2014-12-06 09:00:00"
 permalink: "/local-hack-day/"
 host: "The Young Hackers"
