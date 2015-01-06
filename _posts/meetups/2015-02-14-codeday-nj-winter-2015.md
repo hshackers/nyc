@@ -5,8 +5,8 @@ layout: meetup
 title: CodeDay NJ Winter 2015
 date: "2015-02-14 12:00:00"
 permalink: "/codeday-nj-winter-2015/"
-host: "StudentRND <i class='icon-ampersand'></i> Juice Tank"
-address: "220 Davidson Avenue, Somerset NJ"
+host: "Rohan Mishra <i class='icon-ampersand'></i> StudentRND"
+address: "Juice Tank, 220 Davidson Avenue, Somerset NJ"
 link: "https://codeday.org/jersey"
 background: "url(http://i.imgur.com/jKQdAIu.jpg)"
 published: true
