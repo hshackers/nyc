@@ -2,13 +2,13 @@
 categories: meetup
 meetup: meetup
 layout: meetup
-title: CodeDay Fall 2014
-date: "2014-11-08 17:30:00"
-permalink: "/codeday-ny-fall-2014/"
+title: CodeDay NY Winter 2015
+date: "2015-02-14 12:00:00"
+permalink: "/codeday/"
 host: "StudentRND"
-address: "Wix Lab, 235 W 23rd St, NYC"
+address: "TBA"
 link: "https://codeday.org/ny/"
-background: "url(http://i.imgur.com/DUFLuhs.jpg)"
+background: "url(http://i.imgur.com/jKQdAIu.jpg)"
 published: true
 ---
 

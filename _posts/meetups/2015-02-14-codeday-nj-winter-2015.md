@@ -2,13 +2,13 @@
 categories: meetup
 meetup: meetup
 layout: meetup
-title: CodeDay Fall 2014
-date: "2014-11-08 17:30:00"
-permalink: "/codeday-ny-fall-2014/"
-host: "StudentRND"
-address: "Wix Lab, 235 W 23rd St, NYC"
-link: "https://codeday.org/ny/"
-background: "url(http://i.imgur.com/DUFLuhs.jpg)"
+title: CodeDay NJ Winter 2015
+date: "2015-02-14 12:00:00"
+permalink: "/codeday-nj-winter-2015/"
+host: "StudentRND <i class='icon-ampersand'></i> Juice Tank"
+address: "220 Davidson Avenue, Somerset NJ"
+link: "https://codeday.org/jersey"
+background: "url(http://i.imgur.com/jKQdAIu.jpg)"
 published: true
 ---
 
@@ -16,5 +16,5 @@ CodeDay is a 24-hour event where students passionate about technology get togeth
 
 Registration is open to all high school and college students. Get your tickets here, and use promo code HSHACKERS for 25% off:
 
-# [https://codeday.org/ny](https://codeday.org/ny)
+# [https://codeday.org/jersey](https://codeday.org/jersey)
 
