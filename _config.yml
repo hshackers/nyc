@@ -23,12 +23,12 @@ android: ""
 ifttt: "http://ifttt.com/"
 
 # Local Meetup Links
-meetup1: "NYC TechBreakfast"
-meetup1-url: "http://www.meetup.com/NYC-TechBreakfast/"
-meetup2: "NY Tech Meetup"
-meetup2-url: "http://www.meetup.com/ny-tech/"
-meetup3: "Technical.ly Brooklyn Meetup"
-meetup3-url: "http://www.meetup.com/technically-brooklyn/"
+meetup1: "The Young Hackers"
+meetup1-url: "http://younghackers.us/"
+meetup2: "NYC TechBreakfast"
+meetup2-url: "http://www.meetup.com/NYC-TechBreakfast/"
+meetup3: "NY Tech Meetup"
+meetup3-url: "http://www.meetup.com/ny-tech/"
 
 # Build settings
 markdown: kramdown
