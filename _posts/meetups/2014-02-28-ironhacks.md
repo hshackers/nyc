@@ -8,7 +8,7 @@ permalink: "/ironhacks/"
 host: "The Young Hackers <i class='icon-ampersand'></i> The Flatiron School"
 address: "The Flatiron School, Suite 260, 11 Broadway, NYC"
 link: "http://ironhacks.younghackers.us"
-background: "url(http://i.imgur.com/vX33LKo.jpg?2)"
+background: "url(http://i.imgur.com/6pTLWvr.jpg)"
 published: true
 ---
 
