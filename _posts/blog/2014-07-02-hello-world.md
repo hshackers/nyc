@@ -2,11 +2,11 @@
 categories: blog
 layout: blog
 title: Hello World!
-subtitle: "This is a test."
-permalink: "/hello-world/"
+subtitle: This is a test.
+permalink: /hello-world/
 author: Victor Lourng
-author-link: "http://victorlourng.com/"
-background: "rgb(119, 40, 23)"
+author-link: 'http://victorlourng.com/'
+background: 'rgb(119, 40, 23)'
 published: true
 ---
 
